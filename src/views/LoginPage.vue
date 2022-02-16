@@ -1,0 +1,40 @@
+<template>
+    <ion-content>
+        <div class="flex-center">
+            <ion-card>
+                <ion-card-header>
+                    <ion-card-title color="success">Reciclica</ion-card-title>
+                </ion-card-header>
+
+                <ion-card-content>
+                   <ion-item>
+                        <ion-label position="floating">Email</ion-label>
+                        <ion-input type="email"></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label position="floating">Password</ion-label>
+                        <ion-input type="password"></ion-input>
+                    </ion-item>
+                    <ion-button color="dark" fill="clear" size="full">Forgot email/password</ion-button>
+                    <ion-button color="success" size="full">Login</ion-button>
+                    <ion-button color="success" fill="clear" size="full">Register</ion-button>
+                </ion-card-content>
+            </ion-card>
+        </div>
+    </ion-content>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+    name: 'LoginPage'
+})
+</script>
+
+<style scoped>
+    ion-content {
+        --background: var(--ion-color-success);
+    }
+</style>
